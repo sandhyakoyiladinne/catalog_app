@@ -1,0 +1,56 @@
+
+   .landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(blue, rgb(247, 7, 175));
+}
+
+.start-button {
+    padding: 20px 40px;
+    font-size: 24px;
+    cursor: pointer;
+    background: linear-gradient(rgb(5, 235, 243), rgb(231, 109, 130));
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+
+/* Medium devices (tablets, small desktops) */
+@media (max-width: 1025px) {
+    .start-button {
+        padding: 15px 30px; 
+        font-size: 20px; 
+    }
+}
+
+/* Small devices (phones, tablets) */
+@media (max-width: 768px) {
+    .landing-page {
+        height: auto; 
+        padding: 20px; 
+        flex-direction: column; 
+    }
+
+    .start-button {
+        padding: 12px 25px; 
+        font-size: 18px; 
+    }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 480px) {
+    .start-button {
+        padding: 10px 20px; 
+        font-size: 16px; 
+        width: 100%; 
+    }
+}
